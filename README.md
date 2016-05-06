@@ -25,3 +25,9 @@ bundle install
 bundle exec rake pod:install
 bundle exec rake
 ```
+
+## Additional Resources
+
+* [RubyMotion Slack](https://motioneers.herokuapp.com)
+* [RubyMotion Community Forum](http://community.rubymotion.com)
+* [Portland RubyMotion Meetup Blog](http://motionpdx.github.io)

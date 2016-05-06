@@ -1,7 +1,96 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# Import the meme images from the le_meme gem
+# memelib = LeMeme::MemeLib.new_with_default_memes
+# memelib.memes.each do |key, image_path|
+#   # system %Q(cp "#{image_path}" "#{Rails.root.join('public', 'images')}")
+#   data = {
+#     name: key.split('/').last,
+#     file_name: image_path.split('/').last,
+#     width: `identify -format "%w" #{image_path}`,
+#     height: `identify -format "%h" #{image_path}`,
+#   }
+#   puts "MemeTemplate.create width: #{data[:width]}, height: #{data[:height]}, name: '#{data[:name]}', file_name: '#{data[:file_name]}'"
+# end
+
+User.create email: 'demo@example.com', password: 'password', password_confirmation: 'password'
+
+MemeTemplate.create width: 500, height: 454, name: '10guy', file_name: '10guy.jpg'
+MemeTemplate.create width: 537, height: 390, name: 'aaduck', file_name: 'aaduck.jpg'
+MemeTemplate.create width: 500, height: 436, name: 'aliens', file_name: 'aliens.jpg'
+MemeTemplate.create width: 500, height: 355, name: 'allthethings', file_name: 'allthethings.jpg'
+MemeTemplate.create width: 400, height: 412, name: 'ariel', file_name: 'ariel.jpg'
+MemeTemplate.create width: 480, height: 360, name: 'bad', file_name: 'bad.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'bcat', file_name: 'bcat.jpg'
+MemeTemplate.create width: 475, height: 562, name: 'blb', file_name: 'blb.jpg'
+MemeTemplate.create width: 620, height: 465, name: 'bpuffin', file_name: 'bpuffin.jpg'
+MemeTemplate.create width: 622, height: 477, name: 'brace', file_name: 'brace.jpg'
+MemeTemplate.create width: 460, height: 480, name: 'bravebear', file_name: 'bravebear.jpg'
+MemeTemplate.create width: 640, height: 551, name: 'bsm', file_name: 'bsm.jpg'
+MemeTemplate.create width: 392, height: 560, name: 'bush', file_name: 'bush.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'butthurt', file_name: 'butthurt.jpg'
+MemeTemplate.create width: 608, height: 463, name: 'bwolf', file_name: 'bwolf.jpg'
+MemeTemplate.create width: 500, height: 647, name: 'cash', file_name: 'cash.jpg'
+MemeTemplate.create width: 350, height: 350, name: 'catte', file_name: 'catte.jpg'
+MemeTemplate.create width: 711, height: 941, name: 'comrade', file_name: 'comrade.jpg'
+MemeTemplate.create width: 500, height: 375, name: 'costanza', file_name: 'costanza.jpg'
+MemeTemplate.create width: 480, height: 360, name: 'cpthind', file_name: 'cpthind.jpg'
+MemeTemplate.create width: 1280, height: 1495, name: 'dank', file_name: 'dank.jpg'
+MemeTemplate.create width: 620, height: 620, name: 'doge', file_name: 'doge.jpg'
+MemeTemplate.create width: 500, height: 380, name: 'everywhere', file_name: 'everywhere.jpg'
+MemeTemplate.create width: 479, height: 720, name: 'fedora', file_name: 'fedora.jpg'
+MemeTemplate.create width: 620, height: 743, name: 'feels', file_name: 'feels.jpg'
+MemeTemplate.create width: 680, height: 508, name: 'fem', file_name: 'fem.jpg'
+MemeTemplate.create width: 552, height: 414, name: 'fry', file_name: 'fry.jpg'
+MemeTemplate.create width: 552, height: 367, name: 'fwp', file_name: 'fwp.jpg'
+MemeTemplate.create width: 700, height: 525, name: 'gator', file_name: 'gator.jpg'
+MemeTemplate.create width: 500, height: 379, name: 'gears', file_name: 'gears.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'ggg', file_name: 'ggg.jpg'
+MemeTemplate.create width: 620, height: 633, name: 'goat', file_name: 'goat.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'god', file_name: 'god.jpg'
+MemeTemplate.create width: 640, height: 480, name: 'grandma', file_name: 'grandma.jpg'
+MemeTemplate.create width: 500, height: 616, name: 'grumpycat', file_name: 'grumpycat.jpg'
+MemeTemplate.create width: 500, height: 373, name: 'hartmann', file_name: 'hartmann.jpg'
+MemeTemplate.create width: 637, height: 442, name: 'hitler', file_name: 'hitler.jpg'
+MemeTemplate.create width: 1044, height: 807, name: 'hogscalder', file_name: 'hogscalder.jpg'
+MemeTemplate.create width: 500, height: 401, name: 'impossibru', file_name: 'impossibru.jpg'
+MemeTemplate.create width: 550, height: 690, name: 'interesting', file_name: 'interesting.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'iwolf', file_name: 'iwolf.jpg'
+MemeTemplate.create width: 555, height: 729, name: 'jducreux', file_name: 'jducreux.jpg'
+MemeTemplate.create width: 600, height: 795, name: 'jimmies', file_name: 'jimmies.jpg'
+MemeTemplate.create width: 900, height: 900, name: 'jobs', file_name: 'jobs.jpg'
+MemeTemplate.create width: 297, height: 450, name: 'johnny', file_name: 'johnny.jpg'
+MemeTemplate.create width: 551, height: 549, name: 'keanu', file_name: 'keanu.jpg'
+MemeTemplate.create width: 576, height: 768, name: 'limes', file_name: 'limes.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'maymay', file_name: 'maymay.jpg'
+MemeTemplate.create width: 306, height: 306, name: 'mayonnaise', file_name: 'mayonnaise.jpg'
+MemeTemplate.create width: 620, height: 367, name: 'menswarehouse', file_name: 'menswarehouse.jpg'
+MemeTemplate.create width: 500, height: 281, name: 'money', file_name: 'money.jpg'
+MemeTemplate.create width: 568, height: 335, name: 'mordor', file_name: 'mordor.jpg'
+MemeTemplate.create width: 500, height: 303, name: 'morpheus', file_name: 'morpheus.jpg'
+MemeTemplate.create width: 340, height: 255, name: 'neckbear', file_name: 'neckbear.jpg'
+MemeTemplate.create width: 500, height: 370, name: 'oag', file_name: 'oag.jpg'
+MemeTemplate.create width: 1200, height: 900, name: 'obama', file_name: 'obama.jpg'
+MemeTemplate.create width: 668, height: 1024, name: 'ogre', file_name: 'ogre.jpg'
+MemeTemplate.create width: 500, height: 348, name: 'onlyone', file_name: 'onlyone.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'philo', file_name: 'philo.jpg'
+MemeTemplate.create width: 500, height: 350, name: 'picard', file_name: 'picard.jpg'
+MemeTemplate.create width: 500, height: 324, name: 'picard2', file_name: 'picard2.jpg'
+MemeTemplate.create width: 420, height: 316, name: 'rent', file_name: 'rent.jpg'
+MemeTemplate.create width: 470, height: 481, name: 's3kid', file_name: 's3kid.jpg'
+MemeTemplate.create width: 467, height: 355, name: 'santa', file_name: 'santa.jpg'
+MemeTemplate.create width: 576, height: 576, name: 'sap', file_name: 'sap.jpg'
+MemeTemplate.create width: 620, height: 397, name: 'seal', file_name: 'seal.jpg'
+MemeTemplate.create width: 1440, height: 900, name: 'sexyfry', file_name: 'sexyfry.jpg'
+MemeTemplate.create width: 500, height: 353, name: 'sfr', file_name: 'sfr.jpg'
+MemeTemplate.create width: 900, height: 736, name: 'shotweb', file_name: 'shotweb.jpg'
+MemeTemplate.create width: 748, height: 877, name: 'shrek', file_name: 'shrek.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'skid', file_name: 'skid.jpg'
+MemeTemplate.create width: 500, height: 332, name: 'skid2', file_name: 'skid2.jpg'
+MemeTemplate.create width: 600, height: 450, name: 'smg', file_name: 'smg.jpg'
+MemeTemplate.create width: 500, height: 333, name: 'smugbob', file_name: 'smugbob.jpg'
+MemeTemplate.create width: 469, height: 359, name: 'spoderman', file_name: 'spoderman.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'steve', file_name: 'steve.jpg'
+MemeTemplate.create width: 450, height: 337, name: 'ugly', file_name: 'ugly.jpg'
+MemeTemplate.create width: 620, height: 833, name: 'unclesam', file_name: 'unclesam.jpg'
+MemeTemplate.create width: 550, height: 545, name: 'wonka', file_name: 'wonka.jpg'
+MemeTemplate.create width: 642, height: 697, name: 'yee', file_name: 'yee.jpg'
+MemeTemplate.create width: 500, height: 500, name: 'yuno', file_name: 'yuno.jpg'
