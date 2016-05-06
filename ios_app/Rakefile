@@ -25,8 +25,9 @@ Motion::Project::App.setup do |app|
   # app.sdk_version = '7.1'
 
   # Target OS
-  app.deployment_target = '7.1'
+  # app.deployment_target = '7.1'
   # app.deployment_target = '8.0'
+  # app.deployment_target = '9.3' # the free version of RubyMotion only supports the latest sdk
 
   app.icons = Dir.glob("resources/icon*.png").map{|icon| icon.split("/").last}
 
@@ -53,6 +54,7 @@ Motion::Project::App.setup do |app|
   app.development do
     app.codesign_certificate = "iPhone Developer: YOURNAME"
     app.provisioning_profile = "signing/memez.mobileprovision"
+    app.info_plist['NSAppTransportSecurity'] = { 'NSAllowsArbitraryLoads' => true } # allow any HTTP request
   end
 
   app.release do
