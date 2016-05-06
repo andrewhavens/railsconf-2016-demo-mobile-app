@@ -9,7 +9,12 @@ class AppDelegate < PM::Delegate
 
   def on_load(app, options)
     cdq.setup # Remove this if you aren't using CDQ
-    open HomeScreen.new(nav_bar: true)
+    if Auth.signed_in?
+      ApiClient.update_authorization_header(Auth.authorization_header)
+      open_tab_bar MemesScreen.new(nav_bar: true), MemeTemplatesScreen.new(nav_bar: true)
+    else
+      open SignInScreen.new(nav_bar: true)
+    end
   end
 
   # Remove this if you are only supporting portrait
