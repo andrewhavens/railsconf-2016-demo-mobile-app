@@ -20,18 +20,36 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - RSColorPicker (0.9.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - UICKeyChainStore (2.1.0)
+  - XLForm (3.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.0)
+  - RSColorPicker
   - SDWebImage
+  - UICKeyChainStore
+  - XLForm (from `https://github.com/xmartlabs/XLForm.git`)
+
+EXTERNAL SOURCES:
+  XLForm:
+    :git: https://github.com/xmartlabs/XLForm.git
+
+CHECKOUT OPTIONS:
+  XLForm:
+    :commit: 0e866a0f22c1313763193dcd15fb1dbf13eb1bec
+    :git: https://github.com/xmartlabs/XLForm.git
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  RSColorPicker: 4d71e12f8e28d44c3885fbb3ba10bc3627bdb393
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  UICKeyChainStore: f1cbd42216a113f0165de1e733e62905b8823432
+  XLForm: c9ee7e0f859341279bfd894f9589a9d25c23e4df
 
-PODFILE CHECKSUM: bcb29b892f3f98c7e236c20ae86f99def89c82c4
+PODFILE CHECKSUM: e8bd19667dd3fab388e3b8360edec5b610e01240
 
 COCOAPODS: 1.0.0.rc.1
