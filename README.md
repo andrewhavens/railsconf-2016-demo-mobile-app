@@ -26,6 +26,10 @@ bundle exec rake pod:install
 bundle exec rake
 ```
 
+If you'd like to skip ahead and see the finished product:
+
+    git checkout finished
+
 ## Additional Resources
 
 * [RubyMotion Slack](https://motioneers.herokuapp.com)
