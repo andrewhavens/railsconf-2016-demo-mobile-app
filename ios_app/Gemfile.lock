@@ -4,6 +4,9 @@ GEM
     ProMotion (2.6.0)
       methadone (~> 1.7)
       motion_print (~> 1.0)
+    ProMotion-XLForm (0.0.15)
+      ProMotion (~> 2.0)
+      motion-cocoapods (~> 1.4)
     RedAlert (1.5)
       ruby_motion_query (>= 1.3.4)
     activesupport (4.2.6)
@@ -61,8 +64,13 @@ GEM
       bundler
     minitest (5.8.4)
     molinillo (0.4.5)
+    motion-authentication (1.0.0)
+      motion-cocoapods
+      motion-keychain
     motion-cocoapods (1.8.0.beta.4)
       cocoapods (>= 1.0.0.beta.7)
+    motion-keychain (0.0.1)
+      motion-cocoapods (>= 1.4.1)
     motion-require (0.2.0)
     motion-yaml (1.4)
     motion_print (1.2.0)
@@ -97,8 +105,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ProMotion-XLForm
   afmotion
   cdq
+  motion-authentication
   motion-cocoapods (= 1.8.0.beta.4)
   motion-yaml (= 1.4)
   newclear
