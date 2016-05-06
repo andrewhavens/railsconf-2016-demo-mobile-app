@@ -2,6 +2,8 @@
 
 This repository contains the code used in the RailsConf 2016 "Learn how to build a Rails API-Backed Mobile App with RubyMotion" workshop.
 
+You can find the slides from the workshop here: https://speakerdeck.com/andrewhavens/build-a-rails-api-backed-mobile-app-with-rubymotion-and-redpotion
+
 The demo app allows you to create and save your own memes.
 
 * The `api` directory contains the code for the API.
