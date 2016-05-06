@@ -9,26 +9,11 @@ class NewMemeScreen < PM::Screen
     stylesheet.template = template
 
     append(UIScrollView, :scroll_view).tap do |sv|
-    #   sv.append(UIImageView, :meme_image).style do |st|
-    #     st.remote_image = template.image_url
-    #
-    #   end
-    #   @top_text = sv.append(UITextField, :top_text)
-    #   @bottom_text = sv.append(UITextField, :bottom_text)
-    # end
-    sv.append(UIView, :container).tap do |c|
-      # c.style do |st|
-      #   width_to_height_ratio = template.width.to_f / template.height.to_f
-      #   height = device.screen_width / template.ratio
-      #   st.frame = { l: 0, t: 50, w: :full, h: device.screen_width / width_to_height_ratio }
-      # end
-      @image_view = c.append(UIImageView, :meme_image).style do |st|
-        # st.frame = { l: 0, t: 0, w: :full, height: device.screen_width * width_to_height_ratio }
-        # st.remote_image = template.image_url
+      sv.append(UIView, :container).tap do |c|
+        @image_view  = c.append(UIImageView, :meme_image)
+        @top_text    = c.append(UITextField, :top_text)
+        @bottom_text = c.append(UITextField, :bottom_text)
       end
-      @top_text = c.append(UITextField, :top_text)
-      @bottom_text = c.append(UITextField, :bottom_text)
-    end
     end
   end
 

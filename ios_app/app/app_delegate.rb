@@ -11,10 +11,14 @@ class AppDelegate < PM::Delegate
     cdq.setup # Remove this if you aren't using CDQ
     if Auth.signed_in?
       ApiClient.update_authorization_header(Auth.authorization_header)
-      open_tab_bar MemesScreen.new(nav_bar: true), MemeTemplatesScreen.new(nav_bar: true)
+      open_authenticated_root
     else
       open SignInScreen.new(nav_bar: true)
     end
+  end
+
+  def open_authenticated_root
+    open_tab_bar MemesScreen.new(nav_bar: true), MemeTemplatesScreen.new(nav_bar: true)
   end
 
   # Remove this if you are only supporting portrait
